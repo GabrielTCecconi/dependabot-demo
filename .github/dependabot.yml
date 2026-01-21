@@ -5,11 +5,22 @@ updates:
     directory: "/javascript"
     schedule:
       interval: "daily"
-    pen-pull-requests-limit: 3
+    pen-pull-requests-limit: 2
     rebase-strategy: "auto"
     commit-message:
       prefix: 'fix'
       include: 'scope'
+  - package-ecosystem: npm
+    directory: "/javascript"
+    schedule:
+      interval: "weekly"
+    pen-pull-requests-limit: 0
+    rebase-strategy: "auto"
+    commit-message:
+      prefix: 'fix'
+      include: 'scope'
+    labels:
+      - "security"
     groups:
       js:
         applies-to: security-updates
