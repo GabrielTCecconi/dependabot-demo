@@ -5,4 +5,11 @@ updates:
     directory: "/javascript"
     schedule:
       interval: "daily"
-
+    pen-pull-requests-limit: 3
+    rebase-strategy: "auto"
+    commit-message:
+      prefix: 'fix'
+      include: 'scope'
+    groups:
+      js:
+        applies-to: security-updates
